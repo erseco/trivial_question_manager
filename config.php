@@ -23,11 +23,11 @@
 define("SITE_NAME", "Trivia Question Manager");
 
 define("DB_HOST", "localhost");
-define("DB_USER", "ejercicio_pw");
-define("DB_PASSWORD", "pass_ejercicio_pw");
-define("DB_NAME", "74003802");
-define("TQM_DIR_PATH", "/74003802/"); //Introduzca aqui la ruta del directorio donde esté TQM dentro de apache (acabado en /)
-							 		//por ejemplo, si tqm está dentro del directorio 74003802 introduzca /74003802/
+define("DB_USER", "YOURUSER");
+define("DB_PASSWORD", "YOURPASSWORD");
+define("DB_NAME", "YOURDBNAME");
+define("TQM_DIR_PATH", "/tqm/"); //Introduzca aqui la ruta del directorio donde esté TQM dentro de apache (acabado en /)
+							 		//por ejemplo, si tqm está dentro del directorio tqm introduzca /tqm/
 
 define("SUPPORT_MAIL", "info@ernesto.es"); //ATENCIÓN!! Asegurese de haber configurado sendmail o el smtp correctamente
 										   //en la configuración de su fichero php.ini
