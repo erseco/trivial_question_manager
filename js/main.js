@@ -3,7 +3,7 @@
  * 2014 - Programación Web
  * Grado en Ingeniería Informática
  *
- * Ernesto Serrano <erseco@correo.ugr.es>
+ * Ernesto Serrano <info@ernesto.es>
  * 
  *
  *******************************************
