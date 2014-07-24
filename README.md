@@ -9,13 +9,9 @@ Para la instalacion y correcto funcionamiento simplemente:
 
 Una vez hecho esto podra acceder a la web
 
-La cuenta de administrador por defecto es: 
-	admin@ernesto.es y su password: admin1234
+Puede ver una demostración del funcionamiento de esta web en la dirección:
 
-desde esta cuenta se pueden crear todas las que se quieran
-
-La cuenta de usuario por defecto es:
-	user@ernesto.es y su password es: user1234
+http://pw.ernesto.es/
 
 
 NOTA: Esta web utiliza la extension php-pdo-mysql.dll de php, por lo que debera estar activa en el php.ini
