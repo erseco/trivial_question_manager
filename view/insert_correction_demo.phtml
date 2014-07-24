@@ -1,0 +1,65 @@
+<?php
+/*******************************************
+ *
+ * 2014 - Programación Web
+ * Grado en Ingeniería Informática
+ *
+ * Ernesto Serrano <erseco@correo.ugr.es>
+ * 
+ *
+ *******************************************
+ *
+ * Formulario de ejemplo para ver como funciona la API
+ *
+ ******************************************************************************/
+?>
+
+<br />
+
+<div class="container">
+	<h2><?php echo $page_title; ?></h2>
+	<h3>This is a demo of the API for insert corrections in TQM</h3>
+
+	You can use the next html code to insert corrections in the system in your webpages or your applications, you can send the values to: <strong>http://pw.ernesto.es/api/insert_correction.php</strong>
+
+	The system process the fields sended with POST method and return a JSON array, if all is correct you can see: <strong>{"response":"success","message":"OK"}</strong> if not, you can see a JSON array with the documented error
+
+	<div class="row">
+	  <div class="col-md-8">
+	  		<h3>Sample code</h3>
+			<pre><code class="html">
+			<?php
+				echo htmlentities('
+<form method="post" action="http://pw.ernesto.es/api/insert_correction.php">
+
+	<input name="id_question" type="number">
+
+	<textarea name="comments"></textarea>
+	
+	<input type="submit" />
+	
+</form>');
+			?>
+
+			</code></pre>
+		</div>
+	  	<div class="col-md-4">
+	  		<h3>Live demo</h3>
+			<form role="form" method="post" action="api/insert_correction.php">
+
+				<!-- Campos del formulario -->
+
+				<label for="id_question">Question</label><br />
+				<input name="id_question" type="number"><br />
+			
+				<label for="comments">Comments</label><br />
+				<textarea name="comments" rows="2"></textarea><br />
+				<!-- Fin de campos del formulario -->
+				
+				<input type="submit" />
+				
+			</form>
+		</div>
+	</div>
+</div> <!-- /container -->   
+

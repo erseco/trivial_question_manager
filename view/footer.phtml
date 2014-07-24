@@ -1,0 +1,55 @@
+<?php
+/*******************************************
+ *
+ * 2014 - Programación Web
+ * Grado en Ingeniería Informática
+ *
+ * Ernesto Serrano <erseco@correo.ugr.es>
+ * 
+ *
+ *******************************************
+ *
+ *  Pie de la página, es comun para todas
+ *
+ ******************************************************************************/
+?>
+	<div class="container">
+		<hr>
+
+			<footer>
+				<p>
+					&copy; <?php echo(SITE_NAME); ?> <?php echo(date("Y")); ?> - <a href="index.php?page=credits">Credits</a>
+					<?php 
+						// Mostramos el tiempo que ha tardado en generarse la página
+						$end = microtime(true);
+						echo "<small><em> - Page generated in ".round(($end - $start), 4)." seconds</em></small>"; 
+					?>
+				</p> 
+				
+			</footer>
+		</div> <!-- /container -->        
+				<!-- aqui cargaba jquery, lo he pasado al header -->
+
+				<script src="js/vendor/bootstrap.min.js"></script>
+
+					<!-- bsie js patch, it will only execute in IE6 -->
+					<!--[if lte IE 6]>
+					
+					<script type="text/javascript" src="js/vendor/bootstrap-ie.js"></script>
+					<![endif]-->
+
+				<script type="text/javascript" src="js/vendor/bootbox.js"></script>
+				<script type="text/javascript" src="js/vendor/validator.js"></script>
+
+
+				<script src="js/plugins.js"></script>
+				<script src="js/main.js"></script>
+
+
+		<script src="js/tablefilter.js"></script>
+		<script src="js/resizable-tables.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.tablesorter.min.js"></script>
+
+
+		</body>
+</html>

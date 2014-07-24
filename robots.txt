@@ -1,0 +1,5 @@
+# robotstxt.org/
+# Le decimos a todos los bots (*) que no indexen esta página, ya que es para uso privado
+
+User-agent: *
+Disallow: /

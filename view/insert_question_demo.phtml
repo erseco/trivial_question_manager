@@ -1,0 +1,95 @@
+<?php
+/*******************************************
+ *
+ * 2014 - Programación Web
+ * Grado en Ingeniería Informática
+ *
+ * Ernesto Serrano <erseco@correo.ugr.es>
+ * 
+ *
+ *******************************************
+ *
+ * Formulario de ejemplo para ver como funciona la API
+ *
+ ******************************************************************************/
+?>
+
+<br />
+
+<div class="container">
+	<h2><?php echo $page_title; ?></h2>
+	<h3>This is a demo of the API for insert questions in TQM</h3>
+
+	You can use the next html code to insert questions in the system in your webpages or your applications, you can send the values to: <strong>http://pw.ernesto.es/api/insert_question.php</strong>
+
+	The system process the fields sended with POST method and return a JSON array, if all is correct you can see: <strong>{"response":"success","message":"OK"}</strong> if not, you can see a JSON array with the documented error
+
+	<div class="row">
+	  <div class="col-md-8">
+	  		<h3>Sample code</h3>
+			<pre><code class="html">
+			<?php
+				echo htmlentities('
+<form method="post" action="http://pw.ernesto.es/api/insert_question.php">
+
+	<input name="id_category" type="number">
+	
+	<input name="id_language" type="number">
+
+	<input name="difficulty" type="number">
+
+	<input name="question" type="text">
+
+	<input name="answer1" type="text">
+
+	<input name="answer2" type="text">
+
+	<input name="answer3" type="text">
+
+	<textarea name="comments"></textarea>
+	
+	<input type="submit" />
+	
+</form>');
+			?>
+
+			</code></pre>
+		</div>
+	  	<div class="col-md-4">
+	  		<h3>Live demo</h3>
+			<form role="form" method="post" action="api/insert_question.php">
+
+				<!-- Campos del formulario -->
+
+				<label for="id_category">Category</label><br />
+				<input name="id_category" type="number"><br />
+				
+				<label for="id_language">Language</label><br />
+				<input name="id_language" type="number"><br />
+
+				<label for="difficulty">Difficulty</label><br />
+				<input name="difficulty" type="number"><br />
+
+				<label for="question">Question</label><br />
+				<input name="question" type="text"><br />
+			
+				<label for="answer1">Answer 1 (correct)</label><br />
+				<input name="answer1" type="text"><br />
+			
+				<label for="answer2">Answer 2</label><br />
+				<input name="answer2" type="text"><br />
+			
+				<label for="answer3">Answer 3</label><br />
+				<input name="answer3" type="text"><br />
+			
+				<label for="comments">Comments</label><br />
+				<textarea name="comments" rows="2"></textarea><br />
+				<!-- Fin de campos del formulario -->
+				
+				<input type="submit" />
+				
+			</form>
+		</div>
+	</div>
+</div> <!-- /container -->   
+

@@ -1,0 +1,41 @@
+<?php
+/*******************************************
+ *
+ * 2014 - Programación Web
+ * Grado en Ingeniería Informática
+ *
+ * Ernesto Serrano <erseco@correo.ugr.es>
+ * 
+ *
+ *******************************************
+ *
+ * Estadísticas de la página (mediante la libreria highchart)
+ *
+ ******************************************************************************/
+?>
+
+<br />
+
+<div class="container">
+
+<h2><?php echo $page_title; ?></h2>
+
+
+<div class="row">
+  <div class="col-md-6">
+  	<?php include "controller/get_chart_questions.php"; ?>
+  </div>
+  <div class="col-md-6">
+  	<?php include "controller/get_chart_users.php"; ?>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+  	<?php include "controller/get_chart_languages.php"; ?>
+  </div>
+  <div class="col-md-6">
+  	<?php include "controller/get_chart_categories.php"; ?>
+  </div>
+</div>
+
+</div>
