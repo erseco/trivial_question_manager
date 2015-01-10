@@ -1,6 +1,8 @@
 Trivial Question Manager
 ========================
 
+Proyecto final para la asignatura de Programación Web (PW) de la Universidad de Granada (UGR)
+
 Para la instalacion y correcto funcionamiento simplemente:
 
 1. Copie la carpeta web dentro del directorio de documentos de Apache
